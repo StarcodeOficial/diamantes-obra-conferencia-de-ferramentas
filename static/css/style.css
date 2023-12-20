@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #6d0000;
+}
+
+#username {
+    transition: 0.4s;
+}
+
+#password {
+    transition: 0.4s;
+}
+
+#btnLogin {
+    background-color: #7c0000;
+
+    border: black;
+
+    transition: 0.4s;
+}
+
+#username:hover {
+    background-color: whitesmoke;
+}
+#password:hover {
+    background-color: whitesmoke;
+}
+
+#btnLogin:hover {
+    background-color: #b10000;
+}

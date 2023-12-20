@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/pendencias.css">
+    <link rel="icon" href="static/img/logoDiamantes.png" type="image/x-icon">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container min-vh-100 d-flex" id="sectionHeader">
+        <div class="col-md-12" id="headerHeader">
+            <div class="card">
+                <div class="card-header">
+                        <h3 class="text-center">Pendências</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card min-vh-100 " style="display: flex; flex-direction: row;">
+                        <div class="card min-vh-100  col-md-6 align-items-center">
+                            <div class="card-body">
+                                <input id="contagem-colaboradores-limpos" type="text" disabled style="color:green; width: 75px; height: 40px; padding-bottom: 5px; margin-right: 10px; text-align: center;">
+                                <input id="inpCodColab" type="text" placeholder="insira o cod." style="height: 40px; padding-bottom: 5px; margin-right: 10px; text-align: center;">
+                                <input type="submit" class="btn btn-primary" value="Emprestar" id="btnEmprestar">
+                            </div>
+                            <div class="card-body">
+                                <table id="tabela-colaboradores">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card min-vh-100  col-md-6">
+                            <div class="card-body align-items-center">
+                                <input id="contagem-colaboradores-endividados" type="text" disabled style="color:red; width: 75px; height: 40px; padding-bottom: 5px; margin-right: 10px; text-align: center;">
+                                <input id="inputCodColab2" type="text" placeholder="insira o cod." style="height: 40px; padding-bottom: 5px; margin-right: 10px; text-align: center;">
+                                <input type="submit" class="btn btn-primary" value="Devolver" id="btnDevolver">
+                            </div>
+                            <div class="card-body">
+                                <table id="tabela-colaboradores-endividados">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/pendencias.js"></script>
+</body>
+</html>

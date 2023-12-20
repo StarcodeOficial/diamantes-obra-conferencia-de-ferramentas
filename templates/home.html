@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
+    <link rel="icon" href="static/img/logoDiamantes.png" type="image/x-icon">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container min-vh-100 d-flex justify-content-center" id="sectionHeader">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                        <h3 class="text-center">Menu</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/pendencias" method="post">
+                        <input type="submit" value="Pendências" id="pendencias">
+                    </form>          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='scriptHome.js') }}"></script>
+</body>
+</html>

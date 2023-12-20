@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #6d0000;
+}
+
+#sectionHeader {
+    padding-top: 20px;
+}
